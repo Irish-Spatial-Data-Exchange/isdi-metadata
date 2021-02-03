@@ -1,4 +1,4 @@
-(Home)[https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/README.md] | Guides
+[Home](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/README.md) | Guides
 
 # Metadata Guidance Documents
 
