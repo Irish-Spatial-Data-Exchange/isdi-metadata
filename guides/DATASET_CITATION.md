@@ -4,6 +4,9 @@
 
 This document outlines steps to gain a citation for a dataset and how to record the citation in ISDE metadata.
 
+- _Author_ [Adam Leadbetter](https://github.com/adamml)
+- _Last editied_ 17th February 2021
+
 ## Table of Contents
 
 1. [Terminology](#terminology)
@@ -19,6 +22,7 @@ This document outlines steps to gain a citation for a dataset and how to record 
 
 Adapted from Callaghan _et al._ (2012):
 
+- __doi__ A digital object identifier - a persistent identifier to a 
 - __Dataset Serving__ Making a dataset available for download on the web
 - __Data Publication__ Data avaialble on-line with persistent identification and persistent access.
 - __Dataset Citation__ Dataset citation is the method of providing a formal reference to the datasets used in research, reports and publications. A dataset citation includes key descriptive information about the dataset, such as the title, source, and parties responsible for creating the dataset. 
@@ -27,9 +31,16 @@ Adapted from Callaghan _et al._ (2012):
 
 Adapted from Leadbetter _et al._ (2013):
 
-1. __Ensure you can persistently serve a dataset__.
+Before you can begin minting dois:
+
+1. __Ensure you can persistently serve a dataset__. Generally, data citation requires that the data do not change (i.e. are a static version of the dataset) so that the cited dataset is reproducible. A decadal timescale for this reproducibility is expected. Before progressing with the the data citation process establishing a trategy to address this is required. Some doi providers may provide storage options to meet this requirement.
 2. __Choose a doi provider__. Options include [Datacite](https://datacite.org/); [Dryad](https://datadryad.org/); [Figshare](https://figshare.com/); [Zenodo](https://zenodo.org/)
-3. __Create the metadata record for the dataset__. A full ISDE metadata record should be created for the record. However, the doi provider might also require a metadata record in their own profile. For example, Datacite has a metadata kernel decribed [here](https://schema.datacite.org/) which uses a minimal set of elements to describe a doi and to connect the doi to the full metadata record and its URL.
+
+When minting a doi for a dataset:
+
+1. __Establish the dataset authorship__. It is important at the outset to establish who needs to be on the author list for a dataset, and what the order of the authors should be. It is also good practice for the organisation responsible for publishing the dataset and minting the doi to ensure all authors are happy with their names being made public in association with the dataset.
+2. __Create the metadata record for the dataset__. A full ISDE metadata record should be created for the record. However, the doi provider might also require a metadata record in their own profile. For example, Datacite has a metadata kernel decribed [here](https://schema.datacite.org/) which uses a minimal set of elements to describe a doi and to connect the doi to the full metadata record and its URL.
+
 
 ## Including a Citation in Metadata Records
 
