@@ -12,7 +12,7 @@ This document outlines steps to gain a citation for a dataset and how to record 
 1. [Terminology](#terminology)
 2. [Steps to Data Citation](#steps-to-data-citation)
 3. [Including a Citation in Metadata Records](#including-a-citation-in-netadata-records)
-    1. ISO19139
+    1. ISO19115/ISO19139
     1. DCAT
     1. Schema.org
 5. [Open Issues](#open-issues)
@@ -43,6 +43,12 @@ When minting a doi for a dataset:
 
 
 ## Including a Citation in Metadata Records
+
+### ISO19115/19139
+
+### DCAT
+
+### Schema.org
 
 ## Open Issues
 
