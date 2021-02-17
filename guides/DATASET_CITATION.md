@@ -5,7 +5,8 @@
 This document outlines steps to gain a citation for a dataset and how to record the citation in ISDE metadata.
 
 - _Author_ [Adam Leadbetter](https://github.com/adamml)
-- _Last editied_ 17th February 2021
+- _Last edited_ 17th February 2021
+- _Created_ 
 
 ## Table of Contents
 
