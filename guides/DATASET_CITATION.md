@@ -23,8 +23,9 @@ This document outlines steps to gain a citation for a dataset and how to record 
 
 Adapted from Callaghan _et al._ (2012):
 
-- __doi__ A digital object identifier - a persistent identifier to a 
-- __Dataset Serving__ Making a dataset available for download on the web
+- __doi__ A digital object identifier - a persistent identifier to a digital object (document, article, dataset etc...) consisting of a series of letters, numbers and symbols and linking to that object on the Web
+- __Minting__ The act of creating an individual doi
+- __Dataset Serving__ Making a dataset available for download on the Web
 - __Data Publication__ Data avaialble on-line with persistent identification and persistent access.
 - __Dataset Citation__ Dataset citation is the method of providing a formal reference to the datasets used in research, reports and publications. A dataset citation includes key descriptive information about the dataset, such as the title, source, and parties responsible for creating the dataset. 
 
@@ -41,7 +42,12 @@ When minting a doi for a dataset:
 
 1. __Establish the dataset authorship__. It is important at the outset to establish who needs to be on the author list for a dataset, and what the order of the authors should be. It is also good practice for the organisation responsible for publishing the dataset and minting the doi to ensure all authors are happy with their names being made public in association with the dataset.
 2. __Create the metadata record for the dataset__. A full ISDE metadata record should be created for the record. However, the doi provider might also require a metadata record in their own profile. For example, Datacite has a metadata kernel decribed [here](https://schema.datacite.org/) which uses a minimal set of elements to describe a doi and to connect the doi to the full metadata record and its URL.
-
+3. __Publish the dataset to the Web__. In general, data with a citation should be publically, openly available.
+4. __Link the metadata record to the published data__.
+5. __Assign a doi suffix for the dataset__. The doi prefix will be assigned by your doi provider. It may be unique to your organisation as a data publisher, or to the doi provider dependeding on the service you choose and how it is implemented. It is good practice to use a unique identifier scheme for yur suffix, such as a Univerally Unique ID (UUID). UUIDs can be programatically generated in daatabases or in a large number of coding languages, or from a service such as ["Online UUID Generator"](https://www.uuidgenerator.net/).
+6. __Mint the doi__. This step will require following the specific instructions providd by your doi provider
+7. __Create a short doi__. This step is not required, but is considered best practice. Use the shortDOI service [here](https://shortdoi.org/).
+8. __Update your metadata record for the doi, short doi and citation text__.
 
 ## Including a Citation in Metadata Records
 
