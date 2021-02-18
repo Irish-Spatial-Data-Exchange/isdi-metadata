@@ -134,20 +134,62 @@ The `otherCitationDetails` element is used to carry the suggested citation text.
 
 ### DCAT
 
-DCAT uses the `identifier` attribute the Dublin Core Metadata Terms vocabulary which can be used to assign both the full and short dois to a dataset. This attribute expects a literal, rather than a URL, so the strings should be used for the URLs and the `xsd:anyURI` attribute added to the string.
+The example below follows the patterns of Albertoni _et al._ (2020) for the use of the DCAT vocabulary for data citations. This pattern adds connections between the authors and affiliated organisations using both `foaf:member` and `prov:actedOnBehalfOf` predicates.
 
 ```ttl
-@prefix: dcat: <http://www.w3.org/ns/dcat#>.
-@prefix: dct: <http://purl.org/dc/terms/>.
-@prefix: xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix adms: <https://www.w3.org/ns/adms#>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+@base <http://data.marine.ie/geonetwork/srv/api/records/ie.marine.data:dataset.2740>.
 
 <> a dcat:dataset;
-    dct:identifier [
-        "https://doi.org/10.20393/f0257b6e-c55e-4aff-9a68-1c755e3dd8ed"^^xsd:anyURI, 
-        "DOI: 10/csgf"^^xsd:anyURI
-    ].
+	dct:creator _:johnSmith, _:joeBloggs; 
+    dct:identifier _:doi, _:shortDOI;
+    dct:issued "2018-07-24"^^xsd:date;
+    dct:publisher _:marineInstitute.
 
-_:
+_:doi a adms:Identifier;
+	skos:notation "https://doi.org/10.20393/f0257b6e-c55e-4aff-9a68-1c755e3dd8ed"^^xsd:anyURI;
+	adms:schemaAgency "International DOI Foundation";
+	dct:creator _:internationalDoiFoundation.
+
+_:shortDoi a adms:Identifier;
+	skos:notation "https://doi.org/csgf"^^xsd:anyURI;
+	adms:schemaAgency "International DOI Foundation";
+	dct:creator _:internationalDoiFoundation.
+
+_:johnSmith a foaf:Person, prov:Agent;
+	foaf:name "John Smith";
+	prov:actedOnBehalfOf _:marineInstitute.
+
+_:johnSmithOrcid a adms:Identifier;
+	skos:notation "https://orcid.org/0000-0000-0000-0000"^^xsd:anyURI ;
+	adms:schemaAgency "ORCID".
+
+_:joeBloggs a foaf:Person, prov:Agent;
+	foaf:name "Joe Bloggs";
+	prov:actedOnBehalfOf _:marineInstitute.
+
+_:joeBloggsOrcid a adms:Identifier;
+	skos:notation "https://orcid.org/0000-0000-0000-0001"^^xsd:anyURI ;
+	adms:schemaAgency "ORCID".
+
+_:internationalDoiFoundation a foaf:Organization, foaf:Group, prov:Agent;
+	foaf:name "International DOI Foundation";
+	rdfs:label "International DOI Foundation";
+	foaf:homepage <https://www.doi.org/>;.
+
+_:marineInstitute a foaf:Organization , foaf:Group, prov:Agent;
+	foaf:name "Marine Institute";
+	rdfs:label "Marine Institute";
+	foaf:homepage <http://www.marine.ie>;
+	foaf:member _:joeBloggs, _:johnSmith.
 
 ```
 
@@ -181,6 +223,9 @@ Following Jones _et al._ (2021):
 2. How to choose a doi provider
 
 ## References / Further Reading
+R. Albertoni, D. Browning, S. Cox , A. G. Beltran, A. Perego, P. Winstanley (2020). _Data Catalog Vocabulary (DCAT) - Version 3
+W3C First Public Working Draft 17 December 2020_ World Wide Web Consortium. Accessed 18th February 2021 [https://www.w3.org/TR/2020/WD-vocab-dcat-3-20201217/](https://www.w3.org/TR/2020/WD-vocab-dcat-3-20201217/)
+
 P. Buneman, G. Christie, J. A. Davies, R. Dimitrellou, S. D. Harding, A. J. Pawson, J. L. Sharman, Y. Wu (2000). Why data citation isn't working, and what to do about it. _Database_ 2020:baaa022. [https://doi.org/10.1093/databa/baaa022](https://doi.org/10.1093/databa/baaa022)
 
 S. Callaghan, S. Donegan, S. Pepler, M. Thorley, N. Cunningham, P. Kirsch, L. Ault, P. Bell, R. Bowie, A. Leadbetter, R. Lowry, G. Moncoiffe, K. Harrison, B. Smith-Haddon, A. Weatherby, D. Wright (2012). Making Data a First Class Scientific Output: Data Citation and Publication by NERC’s Environmental Data Centres. _International Journal of Digital Curation_ 7(1):107-113. [https://doi.org/10.2218/ijdc.v7i1.218](https://doi.org/10.2218/ijdc.v7i1.218)
