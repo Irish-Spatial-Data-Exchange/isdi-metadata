@@ -4,4 +4,5 @@ _This repository is being developed to provide guidance and examples for best pr
 
 ## Guidance Documents - Table of Contents
 
+- [Abstracts](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/ABSTRACTS.md)
 - [Dataset Citation](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/DATASET_CITATION.md)
