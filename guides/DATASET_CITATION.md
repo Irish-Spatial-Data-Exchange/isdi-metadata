@@ -6,7 +6,7 @@ This document outlines steps to gain a citation for a dataset and how to record 
 
 - _Author_ [Adam Leadbetter](https://github.com/adamml)
 - _Last edited_ 17th February 2021
-- _Created_ 
+- _Created_ 3rd February 2021
 
 ## Table of Contents
 
