@@ -30,7 +30,7 @@ Taking these statements into account, a lineage statement in ISDI metadata shoul
  
 - The [abstract](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/ABSTRACTS.md) may contain generalised descriptions of lineage and is generally targetted at a wider audience. The lineage statement can be used for more specific or technical information and is targetted at a more specialist audience.
 - The lineage statement is not regarded as a piece of _discovery_ metadata, but is an important piece of _usage_ metadata.
-- The lineage statement is best written by, or in conjunction with, data stewards rather than relying on data managers to write it as it should be generated as close to the data source as possible.
+- The lineage statement is best written by, or in conjunction with, data stewards rather than relying on data managers to write it as it should be generated as close to the data source as possible. This recommendation reflects that of Gartner's 2021 Planning Guide for Data Management which encourages the formalisation of data lineage processes as part of data governance progrmames.
 
 ## Specific Recommendations
 
