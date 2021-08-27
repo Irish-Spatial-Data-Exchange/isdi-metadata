@@ -38,7 +38,7 @@ Taking these statements into account, a lineage statement in ISDI metadata shoul
     - Accuracy of the source dataset
 	- Spatial scale of the source dataset
 - If links to other websites are used to describe the lineage of a dataset, these must be frequently checked in order to ensure the links remain active and valid.
-- If more expressive lineage statements with detailed processing steps are required, a model such as the World Wide Web Consortium's Provenance Data Model (PROV) should be considered to allow the information to be disseminated in a structured manner.
+- If more expressive lineage statements with detailed processing steps are required, a model such as the World Wide Web Consortium's (W3C) Provenance Data Model (PROV) should be considered to allow the information to be disseminated in a structured manner.
 
 ## Examples
 
@@ -52,7 +52,7 @@ ISO19115/1939 have a gmd:LI_Lineage type which allows for a lineage statement, b
 
 ### DCAT
 
-
+Using the W3C's PROV ontology, the DCAT vocabulary entails the dcat:Dataset class to be a prov:Entity, allowing the use of the prov:wasGeneratedBy property to connect the metadata describing a dataset with its provenance chain.
 
 ### Schema.org
 
