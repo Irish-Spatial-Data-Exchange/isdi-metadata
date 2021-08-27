@@ -1,6 +1,6 @@
 [ISDE Metadata - Home](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/README.md) | [Guides](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/README.md) | Lineage Statements
 
-# Abstracts
+# Lineage
 
 This document outlines recommended best practices for writing a lineage statement for ISDE.
 
