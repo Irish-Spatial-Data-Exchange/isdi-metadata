@@ -5,7 +5,7 @@
 This document outlines recommended best practices for writing a lineage statement for ISDE.
 
 - _Author_ [Adam Leadbetter](https://github.com/adamml)
-- _Last edited_ 2th August 2021
+- _Last edited_ 27th August 2021
 - _Created_ 26th August 2021
 
 ## Table of Contents
