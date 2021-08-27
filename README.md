@@ -12,3 +12,4 @@ _This repository is being developed to provide guidance and examples for best pr
 
 - [Abstracts](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/ABSTRACTS.md)
 - [Dataset Citation](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/DATASET_CITATION.md)
+- [Lineage Statements](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/LINEAGE.md)

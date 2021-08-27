@@ -26,7 +26,7 @@ Adapted from Callaghan _et al._ (2012):
 - __doi__ A digital object identifier - a persistent identifier to a digital object (document, article, dataset etc...) consisting of a series of letters, numbers and symbols and linking to that object on the Web
 - __Minting__ The act of creating an individual doi
 - __Dataset Serving__ Making a dataset available for download on the Web
-- __Data Publication__ Data avaialble on-line with persistent identification and persistent access.
+- __Data Publication__ Data available on-line with persistent identification and persistent access.
 - __Dataset Citation__ Dataset citation is the method of providing a formal reference to the datasets used in research, reports and publications. A dataset citation includes key descriptive information about the dataset, such as the title, source, and parties responsible for creating the dataset. 
 
 ## Steps to Data Citation
@@ -35,7 +35,7 @@ Adapted from Leadbetter _et al._ (2013):
 
 Before you can begin minting dois:
 
-1. __Ensure you can persistently serve a dataset__. Generally, data citation requires that the data do not change (i.e. are a static version of the dataset) so that the cited dataset is reproducible. A decadal timescale for this reproducibility is expected. Before progressing with the the data citation process establishing a trategy to address this is required. Some doi providers may provide storage options to meet this requirement.
+1. __Ensure you can persistently serve a dataset__. Generally, data citation requires that the data do not change (i.e. are a static version of the dataset) so that the cited dataset is reproducible. A decadal timescale for this reproducibility is expected. Before progressing with the the data citation process establishing a strategy to address this is required. Some doi providers may provide storage options to meet this requirement.
 2. __Choose a doi provider__. Options include [Datacite](https://datacite.org/); [Dryad](https://datadryad.org/); [Figshare](https://figshare.com/); [Zenodo](https://zenodo.org/)
 
 When minting a doi for a dataset:
@@ -44,15 +44,15 @@ When minting a doi for a dataset:
 2. __Create the metadata record for the dataset__. A full ISDE metadata record should be created for the record. However, the doi provider might also require a metadata record in their own profile. For example, Datacite has a metadata kernel decribed [here](https://schema.datacite.org/) which uses a minimal set of elements to describe a doi and to connect the doi to the full metadata record and its URL. Following Buneman _et al._ (2020), the metadata record should include the following information:
     1. A title containing the version of the dataset being cited.
     2. An author list with affiliations.
-    3. A short descriptiion of the dataset (see the ISDE [Abstracts](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/ABSTRACTS.md) guideline for comprehensive details). This may optionally include a rationale for creating the dataset citation.
+    3. A short description of the dataset (see the ISDE [Abstracts](https://github.com/Irish-Spatial-Data-Exchange/isdi-metadata/blob/main/guides/ABSTRACTS.md) guideline for comprehensive details). This may optionally include a rationale for creating the dataset citation.
     4. A link to download the dataset.
-    5. Details of the organisation repsonble for publishing the dataset. This is the organisation repsonsible for monting and maintainfg the doi.
+    5. Details of the organisation responsible for publishing the dataset. This is the organisation responsible for minting and maintaining the doi.
     6. Any citations required to support the dataset (e.g. other datasets used in creating this dataset; papers used in creating the dataset processing methods).
     7. The doi of the dataset.
-4. __Publish the dataset to the Web__. In general, data with a citation should be publically, openly available.
+4. __Publish the dataset to the Web__. In general, data with a citation should be publicly, openly available.
 5. __Link the metadata record to the published data__.
-6. __Assign a doi suffix for the dataset__. The doi prefix will be assigned by your doi provider. It may be unique to your organisation as a data publisher, or to the doi provider dependeding on the service you choose and how it is implemented. It is good practice to use a unique identifier scheme for yur suffix, such as a Univerally Unique ID (UUID). UUIDs can be programatically generated in daatabases or in a large number of coding languages, or from a service such as ["Online UUID Generator"](https://www.uuidgenerator.net/).
-7. __Mint the doi__. This step will require following the specific instructions providd by your doi provider
+6. __Assign a doi suffix for the dataset__. The doi prefix will be assigned by your doi provider. It may be unique to your organisation as a data publisher, or to the doi provider depending on the service you choose and how it is implemented. It is good practice to use a unique identifier scheme for your suffix, such as a Universally Unique ID (UUID). UUIDs can be programmatically generated in databases or in a large number of coding languages, or from a service such as ["Online UUID Generator"](https://www.uuidgenerator.net/).
+7. __Mint the doi__. This step will require following the specific instructions provided by your doi provider
 8. __Create a short doi__. This step is not required, but is considered best practice. Use the shortDOI service [here](https://shortdoi.org/).
 9. __Update your metadata record for the doi, short doi and citation text__.
 
@@ -62,7 +62,7 @@ When minting a doi for a dataset:
 
 The `CI_Citation` block is used to carry all citation details for an ISO19115 metadata record.
 
-`MD_Identifier` blocks are used to associate both the full and short doi with a dataset. The `gmd:authority` is used to distinguish between the full and short doi, but not to distinguish the suthority through whom the doi was issued which is against the principles of the doi system.
+`MD_Identifier` blocks are used to associate both the full and short doi with a dataset. The `gmd:authority` is used to distinguish between the full and short doi, but not to distinguish the authority through whom the doi was issued which is against the principles of the doi system.
 
 The `otherCitationDetails` element is used to carry the suggested citation text. More detail on the authors and their affiliations and the dataset publisher can be provided in the powerful `CI_ResponsibleParty` block, connected via a `citedResponsibleParty` element.
 
